@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog:HomePage</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <img src="img/logo.png" alt="" height="50px" width="150px">
+        <!-- <ul class="links-container">
+            <li class="link-item">
+                <a href="/" class="link">home</a>
+            </li>
+
+            <li class="link-item">
+                <a href="/editor" class="link">editor</a>
+            </li>
+        </ul> -->
+        <div class="link-container">
+            <ul>
+                <li><a href="home.html" id="a"><b>HOME</b></a></li>
+                <li><a href="editor.html" id="a"><b>EDITOR</b></a></li>
+                <li id="userr">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fas fa-user-circle"></i>
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="form/login.html">Login</a></li>
+                          <li><a href="form/form.html">sign Up</a></li>
+                          
+                        </ul>
+                      </div>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <header class="header">
+        <div class="content">
+           <h1 class="heading">
+            <span class="small">
+                welcome in the world of
+            </span>
+            blog
+            <span class="no-fill">writing</span>
+           </h1>
+
+           <a href="/editor" class="btn">Write a blog</a>
+        </div>
+    </header>
+    <script>
+    var clicks = 0;
+
+    function onClick() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+};
+    </script>
+
+    <!--Blog seciton-->
+    <section class="blogs-section">
+        <div class="blog-card">
+            <a href="home.html"><img src="img/f1.png" class="blog-image" alt=""></a>
+            
+            <h1 class="blog-title">Chunky Boots</h1>
+            <p class="blog-overview">Chunky boots. They are all I've lived in this Winter, especially since the Christmas break. They're warm, practical, and don't forget versatile. </p>
+            <a href="/" class="btn dark">read</a>
+            <i class="fa fa-share-alt" aria-hidden="true" id="share"></i>
+            <i class="fas fa-thumbs-up" id="like" onClick="onClick()"></i><a id="clicks">63</a>
+        </div>
+        <div class="blog-card">
+            <img src="img/f2.png" class="blog-image" alt="">
+            <h1 class="blog-title">Comfy</h1>
+            <p class="blog-overview">A Flattering Bodysuit that is Actually Comfortable
+              Best. News, Ever. Everlane launched their collection of bodysults and could not be more in </p>
+            <a href="/" class="btn dark">read</a>
+            <i class="fa fa-share-alt" aria-hidden="true" id="share"></i>
+            <i class="fas fa-thumbs-up" id="like" onClick="onClick()"></i><a id="clicks">17</a>
+            
+        </div>
+        <div class="blog-card">
+            <img src="img/f3.png" class="blog-image" alt="">
+            <h1 class="blog-title">Bright Fashion</h1>
+            <p class="blog-overview">Young Man In Bright Fashion Photo, Men, Mens Fashion, Hipster and could not be more in and don't forget versatile. | Men's Fashion</p>
+            <a href="/" class="btn dark">read</a>
+            <i class="fa fa-share-alt" aria-hidden="true" id="share"></i>
+            <i class="fas fa-thumbs-up" id="like" onClick="onClick()"></i><a id="clicks">11</a>
+        </div>
+        <div class="blog-card">
+            <img src="img/f4.png" class="blog-image" alt="">
+            <h1 class="blog-title">Wholesome look</h1>
+            <p class="blog-overview">Men's Navy Overcoat, Black Turtleneck, Navy Skinny Jeans, Black Leather Derby Shoes | Men's Fashion
+                A wholesome package</p>
+            <a href="/" class="btn dark">read</a>
+            <i class="fa fa-share-alt" aria-hidden="true" id="share"></i>
+            <i class="fas fa-thumbs-up" id="like" onClick="onClick()"></i><a id="clicks">8</a>
+        </div>
+        <div class="blog-card">
+            <img src="img/f5.png" class="blog-image" alt="">
+            <h1 class="blog-title">Fashionable paris</h1>
+            <p class="blog-overview">Paris is where fashion is. Having solidified its position as a frontrunner in the fashion industry, model agencies expect models </p>
+            <a href="/" class="btn dark">read</a>
+            <i class="fa fa-share-alt" aria-hidden="true" id="share"></i>
+            <i class="fas fa-thumbs-up" id="like" onClick="onClick()"></i><a id="clicks">6</a>
+        </div>
+        <div class="blog-card">
+            <img src="img/f6.png" class="blog-image" alt="">
+            <h1 class="blog-title">Favoured</h1>
+            <p class="blog-overview">Fashion has always heavily favored women’s style. It’s no wonder why; the colors, silhouettes, styles, and options that women have available to wear </p>
+            <a href="/" class="btn dark">read</a>
+            <i class="fa fa-share-alt" aria-hidden="true" id="share"></i>
+            <i class="fas fa-thumbs-up" id="like" onClick="onClick()"></i><a id="clicks">3</a>
+        </div>
+        <div class="blog-card">
+            <img src="img/f7.png" class="blog-image" alt="">
+            <h1 class="blog-title">Switching Gears</h1>
+            <p class="blog-overview">Happy Saturday! Today I'm switching gears and dedicating this Everyday FJ to my personal favorites! My friend Emma had her readers ask her</p>
+            <a href="/" class="btn dark">read</a>
+            <i class="fa fa-share-alt" aria-hidden="true" id="share"></i>
+            <i class="fas fa-thumbs-up" id="like" onClick="onClick()"></i><a id="clicks">0</a>
+        </div>
+    </section>
+    <!-- <hr /> -->
+
+    
+    <!-- <a href="https://www.facebook.com/s"><img src="img/fb.jpg" alt=""></a> -->
+
+    <!-- <a href="#" class="fa fa-facebook" id="FA"></a>
+    <a href="#" class="fa fa-twitter" id="FA"></a>
+    <a href="#" class="fa fa-youtube" id="FA"></a>
+    <a href="#" class="fa fa-instagram" id="FA"></a> -->
+    <!-- <hr /> -->
+  </div>
+  <footer class="foot">
+    <p align="center" line-spacing=1.0><b>© Copyright 2022 Alpinist, JECRC Tech-a-thon <br>All Rights Reserved</b></p>
+  </footer>
+</body>
+</html>
